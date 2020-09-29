@@ -1,13 +1,104 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U4 Tecnologia da Informacao</title>
+    <link rel="stylesheet" href="css/estilos.css"
+    
+</head>
+<body class="home">
+    
+<main id="container">
+   
+    <header id="header">
+<h1 class="logo"> 4U Tecnologia da Infomação</h1>
+<nav id="menu-site">
+    <ul id="navegacao">
+        <li> <a id="home" href="index.html">HOME</a> </li>
+        <li> <a id="home" href="index.html">HISTORIA</a> </li>
+        <li> <a id="home" href="index.html">SERVIÇOS</a> </li>
+        <li> <a id="home" href="index.html">CURSOS</a> </li>
+        <li> <a id="home" href="index.html">CONTATO</a> </li>
+    </ul>
+</nav>
+    </header>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+    <section id="conteudo">
+        <aside id="lateral">
+            <div class="caixa">
+                <h2>CURSOS EM DESTAQUE</h2>
+
+    <div class="caixa-conteudo">
+        <ul>
+            <li> <a href="#">HTML5 e  CSS3</a></li>
+            <li> <a href="#">JavaScript</a></li>
+            <li> <a href="#">Programação</a></li>
+            <li> <a href="#">SQL</a></li>
+            <li> <a href="#">Power BI</a></li>
+        </ul> 
+    </div>
+</div>
+
+
+<div class="caixa">
+    <h2>NOVIDADES</h2>
+<DIV class="caixa-conteudo">
+    <form>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="placeholder="Email">
+            <div>
+                <button type="submit" id="bnt-enviar">Cadastrar</button>
+            </div>
+        </div>
+    </form>
+
+</DIV>
+
+</aside>
+      <div id="primario">
+        <div class="caixa destaque">
+            <h2>PRODUTOS DE INFORMÁTICA</h2>
+    
+    <div class="caixa">
+        <h3>Os melhores produtos</h3>
+        <img class="imagem-principal" src="img/venda_computadores.jpg" alt="Taxi Uber" width="100%"/>
+        <p>
+            Venda de computadores e Laptops novos e usados. Só trabalhamos com as melhores marcas do mercado.
+        </p>
+        <a href="">Leia mais...</a>
+    </div>
+    </div>
+      </div>
+      
+      <div id="secundario">
+        <div id="primario">
+            <div class="caixa destaque">
+                <h2>MANUTENÇÃO EM PC OU LAPTOP</h2>
+        
+        <div class="caixa">
+            <h3>O melhor atendimento</h3>
+            <img class="imagem-principal" src="img/Man_computadores.jpg" alt="Taxi Uber" width="100%"/>
+            <p>
+                Montagem e manutenção de computadores e de todos os periféricos da sua empresa.
+            </p>
+            <a href="">Consulte nossas condições...</a>
+        </div>
+        </div>
+    </div>
+      </div>
+    
+    </section>
+
+
+</main>
+
+<footer>
+    <section id="Rodapé-Coteudo">
+        &copy;Copyrigth 2020 4U Tecnologia da Informação - Rodrigo César Silva Oliveira
+    </section>
+</footer>
+
+</body>
+</html>
